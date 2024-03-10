@@ -40,3 +40,23 @@ console.log(Object.keys(ob1)); // it return as array
 console.log(Object.values(ob1)); // it return as array
 console.log(Object.entries(ob1)); // it return as array
 console.log(ob1.hasOwnProperty(1));
+
+
+//Object Destructure
+
+const course={
+    id:"xy",
+    name:"uy",
+    courseInstructor:"yh"
+}
+
+const {courseInstructor:instructor}=course;
+//console.log(courseInstructor);
+console.log(instructor);
+
+//React destructuring
+/*const navbar=({company})=>{
+
+}
+
+navbar(company="jasn");*/
