@@ -35,3 +35,8 @@ const Ar=[{
 }
 ]
 console.log(Ar[0].id);
+
+console.log(Object.keys(ob1)); // it return as array
+console.log(Object.values(ob1)); // it return as array
+console.log(Object.entries(ob1)); // it return as array
+console.log(ob1.hasOwnProperty(1));
