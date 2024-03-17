@@ -1,0 +1,17 @@
+//map cant be iterated by for in
+
+const myObj={
+    user:"xyz",
+    class:9,
+    score:10
+}
+
+for(const key in myObj){
+    console.log(`${key} value is ${myObj[key]}`);
+}
+
+const a=["ab","ac","va"];
+
+for(const key in a){
+    console.log(`${a[key]}`);
+}
