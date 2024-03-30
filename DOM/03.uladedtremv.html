@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlang(langname){
+    const li=document.createElement('li');
+    li.innerHTML=`${langname}`;
+    document.querySelector('.lang').appendChild(li);
+    }
+    addlang("Python");
+    addlang("Java");
+//optimised way of writing instead if traversing like above through innerHTML
+    function addOptilang(lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(`${lang}`));
+        document.querySelector('.lang').appendChild(li);;
+    }
+    addOptilang("Ruby");
+    addOptilang("SQl");
+
+    //Edit
+    const first=document.querySelector("li:first-child");
+    first.innerHTML="Typescript";
+    //2 edit
+    const second=document.querySelector("li:nth-child(2)");
+    const newLi=document.createElement("li");
+    newLi.textContent="nosql";
+    second.replaceWith(newLi);
+    //remove
+    const third=document.querySelector('li:nth-child(3)');
+    third.remove();
+
+
+</script>
+</html>
