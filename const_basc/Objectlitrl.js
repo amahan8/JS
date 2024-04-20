@@ -7,3 +7,4 @@ const user={
 }
 
 user.getuser();
+console.log(this);
