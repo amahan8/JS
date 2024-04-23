@@ -9,7 +9,7 @@ function User(username,loginCount,isLoggedin){
 }
 
 const userOne= new User("Acd",12,true);
-const userTwo=new User("ADC",10,false);
+const userTwo= new User("ADC",10,false);
 console.log(userTwo.greeting());
 
 
