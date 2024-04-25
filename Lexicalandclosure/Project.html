@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Green">Green</button>
+    <button id="Orange">Orange</button>
+</body>
+<script>
+
+    // Example of Lexical and Closure Scope
+    function Clickhandler(color){
+        return function(){
+            document.body.style.backgroundColor=`${color}`;
+        }
+    }
+ document.getElementById("Green").onclick=Clickhandler("Green");
+ document.getElementById("Orange").onclick=Clickhandler("Orange");
+</script>
+</html>
